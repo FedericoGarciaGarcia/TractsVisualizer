@@ -1,0 +1,112 @@
+<style>
+table{
+	background-color:#ffffff44;
+}
+
+</style>
+
+<table>
+  <tr class="tr0" style="display:block">
+    <td>Show</td>
+    <td colspan="3">
+      <input class='showpanel' type="checkbox" checked  />
+    </td>
+  </tr>
+  
+  <tr class="tr1" style="display:block">
+    <td>Simplified View</td>
+    <td colspan="3">
+      <input class='simpleview' type="checkbox" checked  />
+    </td>
+  </tr>
+  
+  <tr class="tr2" style="display:block">
+    <td>X</td>
+    <form name='rxForm'>
+		<td>
+			<input class="x" type="range" id="xInputId"
+			  min="-1" max="1" step="0.001" value="0"
+			  oninput="xOutputId.value = xInputId.value"/>
+		</td>
+    </form>
+  </tr>
+  
+  <tr class="tr3" style="display:block">
+    <td>Y</td>
+    
+    <form name='ryForm'>
+		<td>
+			<input class="y" type="range" id="yInputId"
+			  min="-1" max="1" step="0.001" value="0"
+			  oninput="yOutputId.value = yInputId.value"/>
+		</td>
+    </form>
+  </tr>
+  
+  <tr class="tr4" style="display:block">
+    <td>Z</td>
+    <form name='rzForm'>
+		<td>
+			<input class="z" type="range" id="zInputId"
+			  min="-1" max="1" step="0.001" value="0"
+			  oninput="zOutputId.value = zInputId.value"/>
+		</td>
+    </form>
+  </tr>
+  
+  <tr class="tr5" style="display:block">
+    <td>RX</td>
+	<form name='rxForm'>
+		<td>
+			<input class="rx" type="range" id="rxInputId"
+			  min="0" max="360" step="0.1" value="0"
+			  oninput="rxOutputId.value = rxInputId.value"/>
+		</td>
+    </form>
+  </tr>
+  
+  <tr class="tr6" style="display:block">
+    <td>RY</td>
+    <form name='ryForm'>
+		<td>
+			<input class="ry" type="range" id="ryInputId"
+			  min="0" max="360" step="0.1" value="0"
+			  oninput="ryOutputId.value = ryInputId.value"/>
+		</td>
+    </form>
+  </tr>
+  
+  <tr class="tr7" style="display:block">
+    <td>RZ</td>
+    <form name='rzForm'>
+		<td>
+			<input class="rz" type="range" id="rzInputId"
+			  min="0" max="360" step="0.1" value="0"
+			  oninput="rzOutputId.value = rzInputId.value"/>
+		</td>
+    </form>
+  </tr>
+  
+  <tr class="tr8" style="display:block">
+    <td>Radius</td>
+	<form name='radiusForm'>
+		<td>
+			<input class="radius" type="range" id="radiusInputId"
+			  min="0" max="1" step="0.001" value="0.1"
+			  oninput="radiusOutputId.value = radiusInputId.value"/>
+		</td>
+    </form>
+  </tr>
+  
+  <tr class="tr9" style="display:block">
+    <td>Opacity</td>
+	<form name='opacityForm'>
+		<td>
+			<input class="opacity" type="range" id="opacityInputId"
+			  min="0" max="1.0" step="0.001" value="0.1"
+			  oninput="opacityOutputId.value = opacityInputId.value"/>
+		</td>
+    </form>
+  </tr>
+  
+</table>

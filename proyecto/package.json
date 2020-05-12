@@ -1,0 +1,36 @@
+{
+  "name": "tfg",
+  "version": "0.0.1",
+  "description": "tfg",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fedegg192@bitbucket.org/fedegg192/fedegg192.bitbucket.io.git"
+  },
+  "keywords": [
+    "web",
+    "vtk",
+    "js",
+    "tfg"
+  ],
+  "author": "Federico Rafael García García",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/fedegg192/fedegg192.bitbucket.io#readme",
+  "dependencies": {
+    "vtk.js": "^11.4.0"
+  },
+  "devDependencies": {
+    "kw-web-suite": "^8.0.0"
+  },
+  "scripts": {
+    "build": "webpack --progress --colors --mode development",
+    "build:release": "webpack --progress --colors --mode production",
+    "start": "webpack-dev-server --content-base ./dist",
+
+    "commit": "git cz",
+    "semantic-release": "semantic-release"
+  }
+}
