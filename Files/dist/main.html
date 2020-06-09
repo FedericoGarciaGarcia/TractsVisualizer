@@ -1,0 +1,210 @@
+<html>
+<head>
+	<meta name="mobile-web-app-capable" content="yes"/>
+    <link rel="stylesheet" type="text/css" href="../css/wallpaper.css" />
+	<script type="text/javascript" src="../js/modernizr.custom.86080.js"></script>
+</head>
+
+<style>
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+ background-image: url("back.jpg");
+ background-color: #52576E;
+ background-position: center;
+ background-size: auto 100%;
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color:#fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.openBtn {
+  background: #f1f1f1;
+  border: none;
+  padding: 1em 1.5em;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.overlay-content {
+  position: relative;
+  top: 5%;
+  width: 80%;
+  text-align: center;
+  margin-top: 3em;
+  margin: auto;
+}
+
+.input1 {
+  margin: 1em 0 1em 0;
+  padding: 1em;
+  border: none;
+  width: 100%;
+  
+  
+  font-size: calc((.2em + 0.6vmin) + (.2em + .6vmax));
+}
+
+.input1:hover {
+  background: #f1f1f1;
+}
+
+.input2 {
+  margin-top:0.3em;
+  margin-left:1em;
+  margin-right:1em;
+  padding: 0.5em;
+  border: none;
+  width: 35%;
+  background: white;
+  
+  font-size: calc((.2em + 0.6vmin) + (.2em + .6vmax));
+}
+
+.input3 {
+  margin-top:2em;
+  padding: 0.5em;
+  border: none;
+  width: 35%;
+  background: white;
+  
+  font-size: calc((.2em + 0.6vmin) + (.2em + .6vmax));
+}
+
+button {
+  margin: 1em;
+  margin-top:2em;
+  width: 35%;
+  padding: 1em;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+ 
+  font-size: calc((.2em + 0.6vmin) + (.2em + .6vmax));
+}
+
+button:hover {
+  background: #bbb;
+}
+
+.small-text {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	color: rgba(255,255,255, 0.9);
+	text-shadow: 2px 2px 4px #000000;
+    font-size: calc((.2em + 0.6vmin) + (.2em + .6vmax));
+}
+
+.medium-text {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	color: rgba(255,255,255, 0.9);
+	text-shadow: 2px 2px 4px #000000;
+    font-size: calc((.3em + 1.5vmin) + (.3em + 1.5vmax));
+}
+
+.large-text {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	color: rgba(255,255,255, 0.9);
+	text-shadow: 2px 2px 4px #000000;
+    font-size: calc((.4em + 3vmin) + (.4em + 3vmax));
+}
+
+</style>
+<body id="page">
+
+<div class="overlay">
+	<div class="overlay-content">
+  
+		<ul class="cb-slideshow">
+            <li><span>Image 01</span></li>
+            <li><span>Image 02</span></li>
+            <li><span>Image 03</span></li>
+            <li><span>Image 04</span></li>
+            <li><span>Image 05</span></li>
+            <li><span>Image 06</span></li>
+		</ul>
+		
+		
+		<div class="container">
+			<div class="center2">
+			  <h1 style="text-align:center" class="medium-text">VTK TRACT DATA VISUALIZATION</h1>
+			  <h2 style="text-align:center" class="small-text">FEDERICO RAFAEL GARCIA GARCIA - 2019</h2>
+			</div>
+			
+			<form name="myform" action="https://fedegg192.bitbucket.io/dist/index.html">
+				<div>
+					<input id="myinput" class="input1" type="text" value="https://bitbucket.org/fedegg192/fedegg192.bitbucket.io/raw/66e8bbaed28f4c52646726139966dc9d7a217a99/data/corpuscallosum.vtk" name="fileURL"/>
+				</div>
+				<div>
+					<select class="input2" name="backgroundColor">
+					  <option value="VTK">VTK</option>
+					  <option value="Black">Black</option>
+					  <option value="White">White</option>
+					  <option value="Gray">Gray</option>
+					</select>
+					<input class="input2" type="text" placeholder="Decimation (1)" value="" name="decimation"/>
+				</div>
+				<div>
+					<input class="input2" type="text" placeholder="Redraw time (40ms)" value="" name="actorRedrawTime"/>
+					<input class="input2" type="text" placeholder="Detail levels (3)" value="" name="detailLevels"/>
+				</div>
+				<div>
+					<input class="input2" type="text" placeholder="Vertex density (0.01)" value="" name="vertexDensity"/>
+					<input class="input2" type="text" placeholder="Tube resolution (5)" value="" name="tubeResolution"/>
+				</div>
+				<div>
+					<input class="input2" type="text" placeholder="Min radius (0.001)" value="" name="minRadius"/>
+					<input class="input2" type="text" placeholder="Max radius (0.003)" value="" name="maxRadius"/>
+				</div>
+				<div>
+					<input class="input2" type="text" placeholder="View angle (100&#176;)" value="" name="cameraViewAngle"/>
+					<input class="input2" type="text" placeholder="Eye spacing (0.05)" value="" name="eyeSpacing"/>
+				</div>
+				<div>
+					<input class="input2" type="text" placeholder="K1 distorsion (0.2)" value="" name="distk1"/>
+					<input class="input2" type="text" placeholder="K2 distorsion (0.0)" value="" name="distk2"/>
+				</div>
+				<div>
+					<button type="submit" name="mode" value="normal"><i class="fa fa-search">NORMAL</i></button>
+					<!-- <button type="submit" name="mode" value="vr"><i class="fa fa-search">VR</i></button> -->
+				</div>
+			</form>
+       
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
