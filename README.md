@@ -4,7 +4,7 @@ Bachelor thesis. Visualization of tractograms in VTK.js
 ## Keywords
 tractograms, VTK, VTK.js, medical data, MRI, DWI, magnetic resonance, virtual reality, polyline
 
-![Cover](https://raw.githubusercontent.com/FedericoGarciaGarcia/TractsVisualizer/master/images/corpuscallosum.png | width=100)
+![Cover](https://raw.githubusercontent.com/FedericoGarciaGarcia/TractsVisualizer/master/images/corpuscallosum.png)
 
 # Abstract
 The objective of this work is to develop a web application for viewing
